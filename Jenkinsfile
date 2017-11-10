@@ -13,7 +13,7 @@ who
 echo $JAVA_HOME
 echo $ANDROID_HOME
 echo "================================================"
-./gradlew check
+./gradlew check --stacktrace
 echo "================================================"'''
         echo 'who'
       }
