@@ -9,6 +9,7 @@ pipeline {
     stage('chek') {
       steps {
         sh './gradlew check'
+        echo 'who'
       }
     }
   }
