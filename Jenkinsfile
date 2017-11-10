@@ -20,7 +20,7 @@ echo "================================================"'''
     }
     stage('report') {
       steps {
-        archiveArtifacts 'app/build/reports/checkstyle/checkstyle.html'
+        archiveArtifacts 'app/build/reports/*/*.html'
         fileExists 'app/build/reports/checkstyle/checkstyle32.html'
       }
     }
