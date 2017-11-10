@@ -6,5 +6,10 @@ pipeline {
         echo 'clone it'
       }
     }
+    stage('chek') {
+      steps {
+        sh './gradlew check'
+      }
+    }
   }
 }
