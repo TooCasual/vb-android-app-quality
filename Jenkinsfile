@@ -18,6 +18,11 @@ echo "================================================"'''
         echo 'who'
       }
     }
+    stage('report') {
+      steps {
+        archiveArtifacts 'app/build/reports/checkstyle/checkstyle.html'
+      }
+    }
   }
   environment {
     JAVA_HOME = '/opt/jdk1.8.0_144'
