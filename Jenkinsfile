@@ -1,5 +1,10 @@
 pipeline {
-  agent any
+  agent {
+    docker {
+      image 'livexp/android-sdk'
+    }
+    
+  }
   stages {
     stage('Initialize') {
       steps {
